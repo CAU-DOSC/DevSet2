@@ -31,7 +31,10 @@
 * 20120717 최현태
 
 ## 작업 분배
-* One person per data structure to implement, unit test, and measure performance 
+
+* data structure to implement
+* unit test
+* measure performance 
 
 | NAME | Data Structure |
 |---|---|
