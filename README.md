@@ -22,7 +22,8 @@
 	  + Implementation of code(unit test를 포함하여)
 	  + Performance 측정을 통한 분석 및 개선
 
-
+## 선택 언어
+JAVA
 ## 조원 명단
 * 20130398 구영서(조장)
 * 20163332 권영선
