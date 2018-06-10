@@ -30,7 +30,7 @@ public class Main {
 	    	
 	    	//IntSetBitVec(권영선)
 	    	
-	    	//IntSetBST(구영)
+	    	//IntSetBST(구영서)
 	    	
 	    	//IntSetList(김남웅)
 	    	
