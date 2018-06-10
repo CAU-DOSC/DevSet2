@@ -1,7 +1,7 @@
 package com.DevSet2.structure;
 import java.util.*;
 
-// 김은경
+// KimEunGyeng
 
 public class IntSetBins {
 	private ArrayList<Integer> IntSetBins; // set of integers
@@ -11,7 +11,7 @@ public class IntSetBins {
 	
 	public IntSetBins(){
 		//set time[]
-		time = new double[4];
+		time = new double[4]; //initialize, insert, report, TOTAL
 	}
 	
 	public void intSetImp(int maxelems, int maxval) {
@@ -42,10 +42,6 @@ public class IntSetBins {
 		report();
 		end=System.currentTimeMillis();
 		time[2] = (end-start)/1000.0;
-			
-		for(int i = 0; i < IntSetBins.size() ; i++) {
-			System.out.println(i+": "+IntSetBins.get(i));
-		}
 	}
 	
 	public void insert(int element) {
@@ -86,6 +82,22 @@ public class IntSetBins {
 		
 	}
 	
+	public void printAll(){
+		//print result of bin sorting
+		for(int i = 0; i < IntSetBins.size() ; i++) {
+			System.out.println(i+": "+IntSetBins.get(i));
+		}
+	}
+	
+	public void printTime(){
+		//print time [initialize, insert, report, total]
+		System.out.println("initialize: "+time[0]);
+		System.out.println("(tot)insert: "+time[1]);
+		System.out.println("report: "+time[2]);
+		System.out.println("total: "+time[3]);
+		
+	}
+	
 	//getter and setter//////////////////////////////////
 	public int getMaxval() {
 		return this.maxval;
@@ -113,6 +125,11 @@ public class IntSetBins {
 	
 	public double getTime(int index){
 		return time[index];
+	}
+	
+	public int getSpace(){
+		//return space complexity : size of member variable 'IntSetBins'
+		return IntSetBins.size() * 4;
 	}
 	/////////////////////////////////////////////////////
  
