@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 import org.junit.Test;
 
-import com.DevSet2.IntSetImp;
+import com.DevSet2.structure.IntSetBins;
 
 
-public class TestBinSort {
+public class TestBins {
 	//maxval: n = 10^8, 10^6
 	//maxelems: m = n/100 , n/50, n/25
 	
 	//sort not duplicated integers, size is (m), and maximum value is (n-1) 
 	@Test
-	public void testBinSort(){
+	public void testBins(){
 		int maxvalue;
 		int maxsize;
 		String time_exp[]={"initialize","insert","report","TOTAL"};
@@ -29,7 +29,7 @@ public class TestBinSort {
     	s.close();
     	s2.close();
     	
-		IntSetImp binsort=new IntSetImp();
+    	IntSetBins binsort=new IntSetBins();
 		binsort.intSetImp(maxsize, maxvalue);
 		binsort.genSets();
 		double end=System.currentTimeMillis();

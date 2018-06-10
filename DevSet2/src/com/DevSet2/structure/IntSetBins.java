@@ -1,13 +1,15 @@
-package com.DevSet2;
+package com.DevSet2.structure;
 import java.util.*;
- 
-public class IntSetImp {
+
+// 김은경
+
+public class IntSetBins {
 	private ArrayList<Integer> IntSetBins; // set of integers
 	private int maxval;
 	private int maxelems;
 	private double time[];
 	
-	public IntSetImp(){
+	public IntSetBins(){
 		//set time[]
 		time = new double[4];
 	}
@@ -114,32 +116,4 @@ public class IntSetImp {
 	}
 	/////////////////////////////////////////////////////
  
- 
- 
- 
-    public static void main(String[] args) {
-    	
-    	int maxval;
-    	int maxelems;
-    	
-    	Scanner s=new Scanner(System.in);
-    	System.out.println("maxval?");
-    	maxval=s.nextInt();
-    	
-    	System.out.println("maxelems?");
-    	Scanner s2=new Scanner(System.in);
-    	maxelems=s2.nextInt();
-    	s2.close();
-    	System.out.println("------------------");
-    	
-    	s.close();
-    	s2.close();
-    	
-    	IntSetImp bucket=new IntSetImp();
-    	bucket.intSetImp(maxelems,maxval);
-    	bucket.genSets();
-    	
-    	System.out.println("------------------");
-       
-    }//main END
 }
