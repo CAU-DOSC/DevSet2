@@ -1,14 +1,10 @@
-package com.BinSort.test;
-import static org.junit.Assert.*;
-
+package com.DevSet2.test;
 import java.util.Scanner;
 
 import org.junit.Test;
-import org.junit.runners.JUnit4;
 
-import com.BinSort.IntSetImp;
+import com.DevSet2.IntSetImp;
 
-import junit.framework.Assert;
 
 public class TestBinSort {
 	//maxval: n = 10^8, 10^6
