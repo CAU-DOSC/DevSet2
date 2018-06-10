@@ -1,6 +1,6 @@
 package com.DevSet2.structure;
 import java.util.*;
- 
+
 // 구영서
 
 public class IntSetBST {
@@ -23,6 +23,7 @@ public class IntSetBST {
 	private int explore_count;
 	private Node root;
 	
+
 	public void intSetImp(int maxelems, int maxval) {
 		//초기
 		this.root = null;
@@ -70,7 +71,7 @@ public class IntSetBST {
 		}
 	}
 	private void explore(int v[], Node node) {	// report를 하기 위하여 탐색하여서 v 배열에 차례대로 쌓는다.
-		if(node == null && this.explore_count + 1 >= v.length) // v의 길이를 초과하면 안되기때문에 조건을 걸어줌.
+		if(node == null)
 			return;
 		explore(v,node.left);					// 왼편이 중심보다 작은 값이 들어가기 때문에 순서대로 담기위하여 왼쪽부터 탐
 		v[this.explore_count++] = node.element;
@@ -89,3 +90,4 @@ public class IntSetBST {
 
  
 }
+
