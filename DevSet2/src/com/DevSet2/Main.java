@@ -2,9 +2,8 @@ package com.DevSet2;
 
 import java.util.Scanner;
 
-import com.DevSet2.structure.IntSetBST;
-import com.DevSet2.structure.IntSetBins;
-import com.DevSet2.structure.IntSetBitVec;
+import com.DevSet2.structure.*;
+
 
 public class Main {
 	public static void main(String[] args) {
@@ -26,13 +25,13 @@ public class Main {
 	    	maxelems = 15;
 	    	
 	    	
-	    	//IntSetBins(源���寃�)
+	    	//IntSetBins()
 	    	//IntSetBins bucket=new IntSetBins();
 	    	//bucket.intSetImp(maxelems,maxval);
 	    	//bucket.genSets();
-	    	//IntSetArr(理쒗쁽�깭)
+	    	//IntSetArr()
 	    	
-	    	//IntSetBitVec(沅뚯쁺�꽑)
+	    	//IntSetBitVec()
 	    	System.out.println("Bit Vector ------------------");
 	    	IntSetBitVec bitvec = new IntSetBitVec(64, 64);
 	    	bitvec.insert(10);
@@ -44,7 +43,7 @@ public class Main {
 	    	
 	    	
 	    	
-	    	//IntSetBST(援ъ쁺�꽌)
+	    	//IntSetBST()
 	    	//System.out.println("------------------");
 	    	//IntSetBST bst = new IntSetBST();
 	    	//bst.intSetImp(maxelems, maxval);
@@ -56,7 +55,17 @@ public class Main {
 	    	//System.out.println("size : "
 	    		//	+ "" + bst.size());
 	    	
-	    	//IntSetList(源��궓�썒)
+	    	//IntSetList()
+
+	    	//IntSetList lst = new IntSetList();
+	    	//lst.intSetImp(maxelems, maxval);
+	    	//lst.dataSet();
+	    	//int q[] = new int[15];
+	    	//bst.report(v);
+	    	//for(int i =0 ; i<15; i++)
+	    	//	System.out.println(q[i]);
+	    	//System.out.println("size : "
+	    		//	+ "" + lst.size());
 	    	
 	    	
 	    	System.out.println("------------------");
