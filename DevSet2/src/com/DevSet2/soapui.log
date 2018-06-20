@@ -1,0 +1,7 @@
+2018-06-20 21:15:26,134 WARN  [DefaultSoapUICore] Missing folder [C:\Users\hytae\ext] for external libraries
+2018-06-20 21:15:26,415 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\hytae\soapui-settings.xml]
+2018-06-20 21:15:26,915 INFO  [WorkspaceImpl] Loading workspace from [C:\Users\hytae\intellij-soapui-workspace.xml]
+2018-06-20 21:16:18,983 INFO  [WorkspaceImpl] Saved workspace to [C:\Users\hytae\intellij-soapui-workspace.xml]
+2018-06-20 21:16:18,998 INFO  [DefaultSoapUICore] Settings saved to [C:\Users\hytae\soapui-settings.xml]
+2018-06-20 21:21:14,837 INFO  [WorkspaceImpl] Saved workspace to [C:\Users\hytae\intellij-soapui-workspace.xml]
+2018-06-20 21:21:14,853 INFO  [DefaultSoapUICore] Settings saved to [C:\Users\hytae\soapui-settings.xml]

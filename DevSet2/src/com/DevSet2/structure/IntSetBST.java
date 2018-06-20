@@ -33,10 +33,21 @@ public class IntSetBST {
 	
 	public void dataSet() {
 		//data들 maxelems 만큼 maxval 범위안의 숫자들을 랜덤으로 뽑아서 insert.
+		int randomCheck[]= new int[maxelems];
+		Arrays.fill(randomCheck,-1);
+		int j = 0;
 		Random random = new Random();
 		while(size() < this.maxelems) {
-			insert(random.nextInt(this.maxval));
-		}	
+            int randomValue = random.nextInt(this.maxval);
+            for(int i = 0; i< maxelems;i++){
+                if(randomValue == randomCheck[i]){
+                    randomValue = random.nextInt(this.maxval);
+                    i = -1;
+                }
+            }
+            randomCheck[j++] = randomValue;
+            insert(randomValue);
+		}
 	}
 	
 	public void insert(int element) {
