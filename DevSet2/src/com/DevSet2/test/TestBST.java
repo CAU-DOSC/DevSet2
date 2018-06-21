@@ -31,10 +31,10 @@ public class TestBST {
     	//s2.close();
 
 		maxvalue = 1000000;
-		maxelems = maxvalue/100;
+		//maxelems = maxvalue/100;
 		//maxelems = maxvalue/50;
 		//maxelems = maxvalue/25;
-    	
+		maxelems = maxvalue/4;
     	
     	System.gc();
         Runtime r = Runtime.getRuntime();

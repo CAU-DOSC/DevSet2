@@ -1,5 +1,52 @@
 ﻿# DevSet2
 
+## BST 결과 분석 (구영서)
+* Time & Space Complexity (maxval=10^6)
+1. maxelem=10000
++ initialize: 0.0s
++ insert: 0.126s
++ report: 0.001s
++ TOTAL: 0.128s
+
+Space Complexity
++ 가용한 힙 메모리126892384bytes
++ 객체 생성 후 가용한 힙 메모리126892384bytes
++ 객체 하나의 메모리 크기는 0bytes
+
+2. maxelem=20000
++ initialize: 0.0s
++ insert: 0.317s
++ report: 0.001s
++ TOTAL: 0.319s
+
+Space Complexity
++ 가용한 힙 메모리126892392bytes
++ 객체 생성 후 가용한 힙 메모리126210792bytes
++ 객체 하나의 메모리 크기는 34bytes
+
+3. maxelem=40000
++ initialize: 0.0s
++ insert: 1.076s
++ report: 0.002s
++ TOTAL: 1.08s
+
+Space Complexity
++ 가용한 힙 메모리126892544bytes
++ 객체 생성 후 가용한 힙 메모리125529344bytes
++ 객체 하나의 메모리 크기는 34bytes
+
+4. maxelem=250000
++ initialize: 0.0s
++ insert: 102.508s
++ report: 0.019s
++ TOTAL: 102.528s
+
+Space Complexity
++ 가용한 힙 메모리126892656bytes
++ 객체 생성 후 가용한 힙 메모리118395040bytes
++ 객체 하나의 메모리 크기는 33bytes
+
+
 ## Array 결과 분석 (최현태)
 * Time & Space Complexity (maxval=10^6)
 1. maxelem=10000

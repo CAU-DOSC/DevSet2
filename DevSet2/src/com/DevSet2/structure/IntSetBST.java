@@ -4,7 +4,7 @@ import java.util.*;
 // 구영서
 
 public class IntSetBST {
-	// 트리 구조의 노드 클래스 생
+	// 트리 구조의 노드 클래스 생성
 	class Node{
 		int element;
 		Node left;
@@ -32,7 +32,7 @@ public class IntSetBST {
 	}
 	
 	public void dataSet() {
-		//data들 maxelems 만큼 maxval 범위안의 숫자들을 랜덤으로 뽑아서 insert.
+		//data들 maxelems 만큼 maxval 범위안의 숫자들을 랜덤으로 뽑아서 insert. 중복을 피하기 위하여 randomCheck 사
 		int randomCheck[]= new int[maxelems];
 		Arrays.fill(randomCheck,-1);
 		int j = 0;
