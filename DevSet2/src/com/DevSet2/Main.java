@@ -52,13 +52,9 @@ public class Main {
 	    	
 	    	//IntSetBitVec()
 	    	System.out.println("Bit Vector ------------------");
-	    	IntSetBitVec bitvec = new IntSetBitVec(64, 64);
-	    	bitvec.insert(10);
-	    	//boolean bit = bitvec.test(10);
-	    	//System.out.println("bit : " + bit);
 	    	
-	    	int [] result = new int [100];
-			bitvec.report(result);
+	    	IntSetBitVec bitvec = new IntSetBitVec(maxval, maxelems);
+	    	bitvec.test_print();
 
 	    	
 	 	    	
@@ -75,6 +71,7 @@ public class Main {
 	    		+ "" + bst.size());
 
 
+
 	    	//IntSetList()
 			System.out.println("-----lst-----------");
 	    	IntSetList lst = new IntSetList();
@@ -89,8 +86,6 @@ public class Main {
 	    	
 	    	
 	    	System.out.println("------------------");
-
-
 	
 	}//main END
 }

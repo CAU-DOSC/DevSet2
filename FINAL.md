@@ -118,3 +118,48 @@ Space Complexity
 + report: 0.003s
 + total(including I/O): 12.517s
 + space complexity (biggest member variable): x
+
+## Bit Vector 결과 분석 (권영선)
+* Time & Space Complexity (maxval=10^6)
+1. maxelem=10000
++ initialize: 0.013s
++ insert: 0.008s
++ report: 0.01s
++ total(including I/0): 0.034s
++ space complexity (Used Memory) : 6bytes
+
+2. maxelem=20000
++ initialize: 0.015s
++ insert: 0.004s
++ report: 0.013s
++ total(including I/O): 0.033s
++ space complexity (Used Memory) : 6bytes
+
+3. maxelem=40000
++ initialize: 0.016s
++ insert: 0.006s
++ report: 0.01s
++ total(including I/O): 0.033s
++ space complexity (Used Memory) : 6bytes
+
+* Time & Space Complexity (maxval=10^8)
+1. maxelem=1000000
++ initialize: 0.21s
++ insert: 0.087s
++ report: 0.161s
++ total(including I/0): 0.46s
++ space complexity (Used Memory) : 22bytes
+
+2. maxelem=2000000
++ initialize: 0.234s
++ insert: 0.15s
++ report: 0.181s
++ total(including I/O): 0.566s
++ space complexity (Used Memory) : 26bytes
+
+3. maxelem=4000000
++ initialize: 0.215s
++ insert: 0.301s
++ report: 0.203s
++ total(including I/O): 0.72s
++ space complexity (Used Memory) : 34bytes

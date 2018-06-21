@@ -56,7 +56,7 @@ public class TestBitVec {
 		System.out.println("Total : " + (end - total_start)/1000.0 + "sec");
 		
 		//Space
-		System.out.println("Used Memory : " + (runtime.totalMemory() - runtime.freeMemory()) / mb);
+		System.out.println("Used Memory : " + (runtime.totalMemory() - runtime.freeMemory()) / mb + "bytes");
 	}
 
 }
