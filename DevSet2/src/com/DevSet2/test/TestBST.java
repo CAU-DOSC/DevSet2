@@ -19,16 +19,21 @@ public class TestBST {
 		String time_exp[]={"initialize","insert","report","TOTAL"};
 		
 		
-		Scanner s=new Scanner(System.in);
-    	System.out.println("maxval?");
-    	maxvalue=s.nextInt();
-       
-    	System.out.println("maxelems?");
-    	Scanner s2=new Scanner(System.in);
-    	maxelems=s2.nextInt();
-		
-    	s.close();
-    	s2.close();
+		//Scanner s=new Scanner(System.in);
+    	//System.out.println("maxval?");
+    	//maxvalue=s.nextInt();
+       //
+    	//System.out.println("maxelems?");
+    	//Scanner s2=new Scanner(System.in);
+    	//maxelems=s2.nextInt();
+		//
+    	//s.close();
+    	//s2.close();
+
+		maxvalue = 1000000;
+		maxelems = maxvalue/100;
+		//maxelems = maxvalue/50;
+		//maxelems = maxvalue/25;
     	
     	
     	System.gc();
