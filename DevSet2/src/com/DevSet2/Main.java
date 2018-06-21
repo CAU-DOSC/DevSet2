@@ -26,41 +26,42 @@ public class Main {
 	    	maxelems = 15;
 	    	
 	    	
-	    	//IntSetBins()
-	    	//IntSetBins bucket=new IntSetBins();
-	    	//bucket.intSetImp(maxelems,maxval);
-	    	//bucket.genSets();
 
 
+	    	System.out.println("Bin Sort--------------------");
+	    	IntSetBins bucket=new IntSetBins();
+	    	bucket.intSetImp(maxelems,maxval);
+	    	bucket.genSets();
+	    	bucket.report();
+	    	//bucket.printAll();  : if you want to print sorted result
+	    	//bucket.printTime(); : if you want to print time info
+	    	//bucket.getSpace();  : if you want to know space complexity
+	    	System.out.println("---------Array---------");
+			  IntSetArr arr = new IntSetArr();
+			  TestArr arrTest = new TestArr();
+			  arr.intSetImp(maxelems,maxval);
+			  arr.arrayData();
+			  int a[] = new int[15];
+			  arr.report(a);
+			  for(int i =0 ; i<15; i++)
+				  System.out.println(a[i]);
+			  System.out.println("size : "
+				  + "" + arr.size());
+			  //arrTest.testArr();
 
-	    	//IntSetArr()
-			System.out.println("---------Array---------");
-			IntSetArr arr = new IntSetArr();
-			TestArr arrTest = new TestArr();
-			arr.intSetImp(maxelems,maxval);
-			arr.arrayData();
-			int a[] = new int[15];
-			arr.report(a);
-			for(int i =0 ; i<15; i++)
-				System.out.println(a[i]);
-			System.out.println("size : "
-				+ "" + arr.size());
-			//arrTest.testArr();
-
-
-
-
-	    	//System.out.println("Bit Vector ------------------");
-	    	//IntSetBitVec bitvec = new IntSetBitVec(64, 64);
-	    	//bitvec.insert(10);
-	    	////boolean bit = bitvec.test(10);
-	    	////System.out.println("bit : " + bit);
-	    	//
-	    	//int [] result = new int [100];
-			//bitvec.report(result);
 	    	
+	    	//IntSetBitVec()
+	    	System.out.println("Bit Vector ------------------");
+	    	IntSetBitVec bitvec = new IntSetBitVec(64, 64);
+	    	bitvec.insert(10);
+	    	boolean bit = bitvec.test(10);
+	    	System.out.println("bit : " + bit);
 	    	
+	    	int [] result = new int [100];
+			bitvec.report(result);
+
 	    	
+	 	    	
 	    	//IntSetBST()
 	    	System.out.println("---------BST---------");
 	    	IntSetBST bst = new IntSetBST();
