@@ -25,11 +25,15 @@ public class Main {
 	    	maxelems = 15;
 	    	
 	    	
-	    	//IntSetBins()
-	    	//IntSetBins bucket=new IntSetBins();
-	    	//bucket.intSetImp(maxelems,maxval);
-	    	//bucket.genSets();
-	    	//IntSetArr()
+	    	System.out.println("Bin Sort--------------------");
+	    	IntSetBins bucket=new IntSetBins();
+	    	bucket.intSetImp(maxelems,maxval);
+	    	bucket.genSets();
+	    	bucket.report();
+	    	//bucket.printAll();  : if you want to print sorted result
+	    	//bucket.printTime(); : if you want to print time info
+	    	//bucket.getSpace();  : if you want to know space complexity
+	    	
 	    	
 	    	//IntSetBitVec()
 	    	System.out.println("Bit Vector ------------------");
