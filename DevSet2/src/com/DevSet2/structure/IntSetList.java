@@ -38,14 +38,17 @@ public class IntSetList {
 	
 	public void insert(int element) {
 		//오름차순으로 입력
-		this.size=this.size+1;
+		
 		Node temp=new Node(element);
 		Node now=this.head;
 		
 		while(now.next!=null)
 		{
-
-			if(now.next.element<=temp.element)
+			if(now.next.element==temp.element)
+			{
+				return;
+			}
+			else if(now.next.element<temp.element)
 			{
 				now=now.next;
 			}    
@@ -53,12 +56,14 @@ public class IntSetList {
 			{
 				temp.next=now.next;
 				now.next=temp;
+				this.size=this.size+1;
 				return;
 			}
 
 		}
 
 		now.next=temp;
+		this.size=this.size+1;
 		return;
 		
 	}
