@@ -1,4 +1,6 @@
 ﻿# DevSet2
+소스코드 DevSet2/src/com/DevSet2/structure
+테스트 DevSet2/DevSet2/src/com/DevSet2/test
 
 ## BST 결과 분석 (구영서)
 * Time & Space Complexity (maxval=10^6)
